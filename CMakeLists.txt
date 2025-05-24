@@ -88,7 +88,7 @@ target_compile_options(oboe
         -Wextra-semi
         -Wshadow
         -Wshadow-field
-        "$<$<CONFIG:RELEASE>:-Ofast>"
+        "$<$<CONFIG:RELEASE>:-Offast_math>"
         "$<$<CONFIG:DEBUG>:-O3>"
         "$<$<CONFIG:DEBUG>:-Werror>")
 
